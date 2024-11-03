@@ -1,6 +1,8 @@
 # db_python
 banco de dados em python puro
 
+codigo no db.py
+
 ```python
 # exemplo
 # Definir tabela "usuarios" com campos e índice no campo "id"

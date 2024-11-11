@@ -110,7 +110,7 @@ class Tabela:
             with open(self.arquivo_csv, 'r') as f:
                 reader = csv.DictReader(f)
                 for row in reader:
-                    if row.get(campo_busca).lower() == valor_busca.lower():
+                    if row.get(campo_busca) == valor_busca:
                         for k, v in novos_dados.items():
                             row[k] = v
                         linhas_atualizadas += 1
@@ -129,7 +129,7 @@ class Tabela:
             with open(self.arquivo_csv, 'r') as f:
                 reader = csv.DictReader(f)
                 for row in reader:
-                    if row.get(campo).lower() == valor.lower():
+                    if row.get(campo) == valor:
                         linhas_deletadas += 1
                         continue
                     novas_linhas.append(row)
